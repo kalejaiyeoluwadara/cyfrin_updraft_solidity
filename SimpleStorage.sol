@@ -2,7 +2,7 @@
 pragma solidity ^0.8.18;
 
 contract SimpleStorage {    
-    uint256 public myfavoriteNumber;
+    uint256 myFavoriteNumber;
 
      struct Person {
         uint256 favoriteNumber;
@@ -16,12 +16,12 @@ contract SimpleStorage {
 
    
 
-    function store(uint256 _myfavoriteNumber) public virtual {
-        myfavoriteNumber = _myfavoriteNumber;
+    function store(uint256 _myFavoriteNumber) public virtual {
+        myFavoriteNumber = _myFavoriteNumber;
     }
 
     function retrieve() public view returns(uint256){
-        return myfavoriteNumber;
+        return myFavoriteNumber;
     }
 
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
@@ -30,6 +30,3 @@ contract SimpleStorage {
     }
 
 }
-contract SimpleStorage2{}
-contract SimpleStorage3{}
-contract SimpleStorage4{}

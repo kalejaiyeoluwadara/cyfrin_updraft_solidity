@@ -4,7 +4,7 @@ import {SimpleStorage} from './SimpleStorage.sol';
 
 contract AddFiveStorage is SimpleStorage{
     function store(uint256 _newNumber) public override{
-        myfavoriteNumber = _newNumber + 5;
+        myFavoriteNumber = _newNumber + 5;
     }
    
 }
